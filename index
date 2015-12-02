@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aron Schalk Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/normalize.css" media="screen">
+    <link rel="stylesheet" href="/css/master.css" media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="name">
+      <h1></h1>
+    </div>
+
+<div class="container">
+
+  <div class="portfolio">
+      <h1>PORTFOLIO</h1>
+    <div class="projectname">
+      <h3>PROJECT NAME</h3>
+    </div>
+    <div class="projectdesc">
+      <h4>lorem ipsum dolor sit amet, bla bla bla lorem ipsum dolor sit amet, bla bla bla</h4>
+    </div>
+      <div class="projectimg pic1">
+      </div>
+
+  <div class="projects">
+      <div class="project pic2">
+      </div>
+      <div class="project pic3">
+      </div>
+      <div class="project pic4">
+      </div>
+      <div class="project pic5">
+      </div>
+  </div>
+  </div>
+
+  <div class="about">
+    <h1>ABOUT</h1>
+    <div class="aboutbg">
+      <div class="abouttext">
+      <h4>lorem ipsum dolor sit amet, bla bla bla bla bla bla bla bla bla</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h1>CONTACT</h1>
+    <form class="contactform" action="index.html" method="post">
+      <h3>Mail me:</h3>
+      <input placeholder="Name"
+      type="text" tabindex="1">
+      <input placeholder="E-mail address" type="email" tabindex="2">
+      <textarea placeholder="Message" tabindex="5"></textarea>
+      <button type="submit" name="submit"  class="contactsubmit">Send</button>
+    </form>
+
+  </div>
+
+</div>
+
+
+
+<div class="menu menuclosed">
+  <label class="menu-toggle"
+  for="menu"><div class="hamburger-menu">
+		  <div class="bar"></div>
+	</div>
+  </label>
+  <ul>
+    <li>
+      <a href="#">HOME</a>
+    </li>
+    <li>
+      <a href="#">PORTFOLIO</a>
+    </li>
+    <li>
+      <a href="#">ABOUT</a>
+    </li>
+    <li>
+      <a href="#">CONTACT</a>
+    </li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".menuclosed").click(function() {
+    $(this).toggleClass("menuopen");
+  });
+    $(".menu-toggle").click(function() {
+    $("ul").toggleClass("visible");
+  }); // menu function
+  $(".pic2").click(function() {
+    $(".projectimg").css("background", "blue");
+  });
+  $(".pic3").click(function() {
+    $(".projectimg").css("background", "orange");
+  });
+  $(".pic4").click(function() {
+    $(".projectimg").css("background", "purple");
+  });
+  $(".pic5").click(function() {
+    $(".projectimg").css("background", "green");
+  });
+}); //ready function
+(function () {
+	$('.hamburger-menu').on('click', function() {
+		$('.bar').toggleClass('animate');
+	})
+})();
+</script>
+
+
+
+  </body>
+</html>

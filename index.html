@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aron Schalk Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" href="css/slidert.css" type="text/css" />
+    <link rel="stylesheet" href="css/master.css" media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/responsiveslidert.min.js"></script>
+  </head>
+  <body>
+
+    <div class="menu menuclosed">
+      <label class="menu-toggle"
+      for="menu"><div class="hamburger-menu">
+    		  <div class="bar"></div>
+    	</div>
+      </label>
+      <ul>
+        <li>
+          <a href="#home">HOME</a>
+        </li>
+        <li>
+          <a href="#portfolio">PORTFOLIO</a>
+        </li>
+        <li>
+          <a href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="name" id="home">
+      <h1>ARON SCHALK</h1>
+      <h4>front-end development and webdesign</h4>
+    </div>
+
+<div class="container">
+
+  <div class="portfolio" id="portfolio">
+      <h1>PORTFOLIO</h1>
+      <script>
+        $(function() {
+          $(".slidert").responsiveSlides({
+        auto: false,             // Boolean: Animate automatically, true or false
+        speed: 500,            // Integer: Speed of the transition, in milliseconds
+        timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+        pager: false,           // Boolean: Show pager, true or false
+        nav: true,             // Boolean: Show navigation, true or false
+        random: false,          // Boolean: Randomize the order of the slides, true or false
+        pause: false,           // Boolean: Pause on hover, true or false
+        pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+        prevText: "Previous",   // String: Text for the "previous" button
+        nextText: "Next",       // String: Text for the "next" button
+        maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+        navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+        manualControls: "#pager",     // Selector: Declare custom pager navigation
+        namespace: "slidert",   // String: Change the default namespace used
+        before: function(){},   // Function: Before callback
+        after: function(){}     // Function: After callback
+        	});
+        });
+      </script>
+      <ul class="slidert">
+        <li>    <div class="projectname">
+              <h3>VENDETTA</h3>
+            </div>
+            <div class="projectdesc">
+              <h4>Concepting for an interactive 'Internet of things' themed contact lens.<br> The Vendetta lens would bring up an interface for objects you could interact with from a distance by looking at it.</h4>
+            </div>
+              <div class="projectimg pic1">
+                <img src="img/vendettaview.png">
+              </div>
+
+          <div class="projects">
+              <div class="project pic2">
+               <img src="img/vendetta1.png">
+              </div>
+              <div class="project pic3">
+                <img src="img/vendetta2.png">
+              </div>
+              <div class="project pic4">
+                <img src="img/vendetta3.png">
+              </div>
+          </div></li>
+        <li>    <div class="projectname">
+              <h3>PERFECT PLACES</h3>
+            </div>
+            <div class="projectdesc">
+              <h4>A prototype for a responsive app.<br> In the app users could find the best location for the activity they want<br>using a filter and choosing between the different themes the app has to offer.</h4>
+            </div>
+              <div class="projectimg pic1">
+                <img src="img/pp1.png">
+              </div>
+
+          <div class="projects">
+            <div class="project pic2">
+             <img src="img/pp2.png">
+            </div>
+            <div class="project pic3">
+              <img src="img/pp4.png">
+            </div>
+            <div class="project pic4">
+              <img src="img/pp3.png">
+            </div>
+            <div class="project pic5">
+              <img src="img/pp5.png">
+            </div>
+          </div></li>
+        <li>    <div class="projectname">
+              <h3>HAPPY TEA</h3>
+            </div>
+            <div class="projectdesc">
+              <h4>A design for a new Lipton packaging I made. The packaging is inspired by a simple tea bag.<br> You pull a label, which is attached to trays with the actual tea bags on them.</h4>
+            </div>
+              <div class="projectimg pic1">
+                <img src="img/happytea1.png">
+              </div>
+
+          <div class="projects">
+            <div class="project pic2">
+             <img src="img/happytea2.png">
+            </div>
+            <div class="project pic3">
+              <img src="img/happytea3.png">
+            </div>
+          </div></li>
+      </ul>
+  </div>
+
+  <div class="about" id="about">
+    <h1>ABOUT</h1>
+    <div class="aboutbg">
+      <div class="abouttext">
+      <h4>My name is Aron Schalk, and I study Interactive Media Design at the Grafisch Lyceum Rotterdam. I design and develop websites and apps with Photoshop, Atom and more. I also like to make more graphic designs in my spare time.
+      <br><br>
+      My interests lie in learning more about UX/UI and becoming a professional front-end developer.
+    </h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <h1>CONTACT</h1>
+    <form class="contactform" action="index.html" method="post">
+      <h3>Mail me:</h3>
+      <input placeholder="Name"
+      type="text" tabindex="1">
+      <input placeholder="E-mail address" type="email" tabindex="2">
+      <textarea placeholder="Message" tabindex="5"></textarea>
+      <button type="submit" name="submit"  class="contactsubmit">Send</button>
+    </form>
+
+  </div>
+
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".menuclosed").click(function() {
+    $(this).toggleClass("menuopen");
+  });
+    $(".menu-toggle").click(function() {
+    $("ul").toggleClass("visible");
+  });
+  $("ul").click(function() {
+    $(this).toggleClass("visible");
+  });
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+      var target = this.hash;
+      var $target = $(target);
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  	});
+  // menu function
+  /*
+  $(".pic2").click(function() {
+    $(".projectimg").css("background", "url(img/vendettaview.png)");
+  });
+  $(".pic3").click(function() {
+    $(".projectimg").css("background", "orange");
+  });
+  $(".pic4").click(function() {
+    $(".projectimg").css("background", "purple");
+  });
+  $(".pic5").click(function() {
+    $(".projectimg").css("background", "green");
+  }); */
+}); //ready function
+(function () {
+	$('.menuclosed').on('click', function() {
+		$('.bar').toggleClass('animate');
+	})
+})();
+</script>
+
+
+
+  </body>
+</html>
